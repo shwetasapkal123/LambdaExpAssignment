@@ -14,7 +14,7 @@ namespace UserRegistrationUsingLambdaExpression
         static void Main(string[] args)
         {
             Console.WriteLine("WELCOME to User Registration using Lambda Expression");
-            Console.WriteLine("Choose an Option:\n 1. First Name\t2.Last Name\t3.Email\t4.exit");
+            Console.WriteLine("Choose an Option:\n 1. First Name\t2.Last Name\t3.Email\t4.Mobile Number\t5.exit");
             bool flag=true;
             int option=Convert.ToInt32(Console.ReadLine()); 
                 switch (option)
@@ -34,7 +34,12 @@ namespace UserRegistrationUsingLambdaExpression
                     email = Console.ReadLine();
                     RegexPattern.CheckEmail(email);
                     break;
-                    case 4:
+                case 4:
+                    Console.WriteLine("Enter your mobile number");
+                    string mobileNumber=Console.ReadLine();
+                    RegexPattern.CheckMobileNumber(mobileNumber);
+                    break;
+                    case 5:
                         flag = false;                   
                         break;
                     default:
