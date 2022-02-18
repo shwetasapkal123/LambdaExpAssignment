@@ -70,5 +70,21 @@ namespace UserRegistrationUsingLambdaExpression
                 return mobileNumber;
             }
         };
+        public static Func<string, string> CheckPassword = (password) =>
+        {
+            string pattern = "^(?=.*[A-Z])(?=.*[\\d])(?=.*[\\W_])[a-zA-Z0-9\\[~!\\.@_#\\$%^\\/&*()+\\-{}:\"<>?\\]]{8,}$";
+            if( Regex.IsMatch(password, pattern))
+            {
+                Console.WriteLine("Entered password is valid");
+                Nlog.SuccessLog("Entered password valid  "+password);
+                return password;
+            }
+            else
+            {
+                Console.WriteLine("Entered password Invalid");
+                Nlog.ErrorInfo("Entered password Invalid  " + password);
+                return password;
+            }
+        };
     }
 }

@@ -9,3 +9,5 @@
 2022-02-18 16:15:30.7101 ERROR Entered mobile number is invalid  +91 8698484646
 2022-02-18 16:17:24.7206 ERROR Entered mobile number is invalid  +91 8698454523
 2022-02-18 16:17:56.4458 INFO Entered mobile number is valid  91 3456789234
+2022-02-18 16:41:09.3180 ERROR Entered password Invalid  shweta5678
+2022-02-18 16:41:50.4259 INFO Entered password valid  Snehal@34
