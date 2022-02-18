@@ -9,12 +9,12 @@ namespace UserRegistrationUsingLambdaExpression
     public class Program
     {
         //Instance Variable
-        public static string firstName,lastName;
+        public static string firstName,lastName,email;
         //Main Method i.e. Program execution start from here
         static void Main(string[] args)
         {
             Console.WriteLine("WELCOME to User Registration using Lambda Expression");
-            Console.WriteLine("Choose an Option:\n 1. First Name\t2.Last Name\t3.exit");
+            Console.WriteLine("Choose an Option:\n 1. First Name\t2.Last Name\t3.Email\t4.exit");
             bool flag=true;
             int option=Convert.ToInt32(Console.ReadLine()); 
                 switch (option)
@@ -29,7 +29,12 @@ namespace UserRegistrationUsingLambdaExpression
                         lastName = Console.ReadLine();
                         RegexPattern.CheckLastName(lastName);
                         break;
-                    case 3:
+                case 3:
+                    Console.WriteLine("Enter your email");
+                    email = Console.ReadLine();
+                    RegexPattern.CheckEmail(email);
+                    break;
+                    case 4:
                         flag = false;                   
                         break;
                     default:

@@ -1,0 +1,7 @@
+﻿
+2022-02-18 15:52:22.4002 INFO Entered mail is valid  abc@yahoo.com
+2022-02-18 15:53:42.8012 INFO Entered mail is valid  abc.100@yahoo.com
+2022-02-18 15:54:10.9904 INFO Entered mail is valid  abc111@abc.com
+2022-02-18 15:55:50.6696 ERROR Entered mail not valid  abc@.com.my
+2022-02-18 15:56:16.9230 ERROR Entered mail not valid  abc123@.com
+2022-02-18 15:56:41.4387 ERROR Entered mail not valid  abc()*@gmail.com
